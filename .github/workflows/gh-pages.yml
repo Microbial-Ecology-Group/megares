@@ -32,5 +32,5 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: dist/megares
-        cname: megares_new.meglab.org
+        cname: megares2.meglab.org
         enable_jekyll: true
