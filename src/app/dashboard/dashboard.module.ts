@@ -10,10 +10,7 @@ import { NgxMatSelectSearchModule } from 'ngx-mat-select-search';
 import { MatSelectInfiniteScrollModule } from 'ng-mat-select-infinite-scroll';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
-import { HomeComponent } from './home/home.component';
 import { BrowseComponent } from './browse/browse.component';
-import { ChangelogComponent } from './changelog/changelog.component';
-import { DownloadComponent } from './download/download.component';
 import { ClassComponent } from './class/class.component';
 import { GroupComponent } from './group/group.component';
 import { MechanismComponent } from './mechanism/mechanism.component';
@@ -24,10 +21,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
-    HomeComponent,
     BrowseComponent,
-    ChangelogComponent,
-    DownloadComponent,
     ClassComponent,
     GroupComponent,
     MechanismComponent,

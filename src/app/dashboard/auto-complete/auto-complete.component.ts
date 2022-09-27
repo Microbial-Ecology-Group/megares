@@ -87,7 +87,7 @@ export class AutoCompleteComponent implements OnInit {
           group : '',
           header : '',
           search_terms: r.class,
-          url: `/browse/${this.addUnderscores(r.class)}/`,
+          url: `/${this.addUnderscores(r.class)}/`,
           render: this.renderItem(r.class, '', '', '')
         });
         cur_class = r.class;
@@ -101,7 +101,7 @@ export class AutoCompleteComponent implements OnInit {
           group : '',
           header : '',
           search_terms: `${r.class}${r.mechanism}`,
-          url: `/browse/${this.addUnderscores(r.class)}/${this.addUnderscores(r.mechanism)}/`,
+          url: `/${this.addUnderscores(r.class)}/${this.addUnderscores(r.mechanism)}/`,
           render: this.renderItem(r.class, r.mechanism, '', '')
         });
         cur_mech = r.mechanism;
@@ -114,7 +114,7 @@ export class AutoCompleteComponent implements OnInit {
           group : r.group,
           header : '',
           search_terms: `0${r.group}`,
-          url: `/browse/${this.addUnderscores(r.class)}/${this.addUnderscores(r.mechanism)}/${this.addUnderscores(r.group)}/`,
+          url: `/${this.addUnderscores(r.class)}/${this.addUnderscores(r.mechanism)}/${this.addUnderscores(r.group)}/`,
           render: this.renderItem(r.class, r.mechanism, r.group, '')
         });      
         cur_group = r.group;
@@ -125,7 +125,7 @@ export class AutoCompleteComponent implements OnInit {
         group : r.group,
         header : r.header,
         search_terms: `${r.header}`,
-        url: `/browse/${this.addUnderscores(r.class)}/${this.addUnderscores(r.mechanism)}/${this.addUnderscores(r.group)}/`,
+        url: `/${this.addUnderscores(r.class)}/${this.addUnderscores(r.mechanism)}/${this.addUnderscores(r.group)}/`,
         render: this.renderItem(r.class, r.mechanism, r.group, r.header)
       });      
     });

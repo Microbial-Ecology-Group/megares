@@ -3,7 +3,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.center-container { max-width: 700px; margin: 0px auto; }
+.center-container { max-width: 748px; margin: 0px auto; }
 .center-content {
     padding-left: 15px;
     padding-right: 15px;
