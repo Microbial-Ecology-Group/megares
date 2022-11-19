@@ -1,27 +1,22 @@
-# Megares
+# db.meglab.org
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+### Overview
 
-## Development server
+This repository contains the front-end html/javascript source code for the MEGARes database browser that's hosted at https://db.meglab.org. It connects to a REST API that's built using the Dropwizard REST framework for Java. Its source code, and deployment information, can be found at https://github.com/Microbial-Ecology-Group/megares-db. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Technology stack
 
-## Code scaffolding
+The source code for the MEGARes database browser's front end is built using Angular and Typescript. The project uses [Angular Material](https://material.angular.io/) ui components.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+- Development server: Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## Build
+This repository/project uses GitHub Actions to automatically build and publish the database browser to a Github Pages site.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Making changes to the front end code
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Using Angular CLI for local development and testing is highly recommended. 
+- A nice editor for source code editing is [Visual Studio Code](https://code.visualstudio.com/)
+- When you push any changes to the source code's master branch, a deployment process will automatically be started. If it fails, your changes won't be pushed to the live site.
+- The Github Actions YAML file is located under .github\workflows\gh-pages.yml
